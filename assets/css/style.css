@@ -586,7 +586,6 @@ section {
   position: relative;
   overflow: hidden;
   margin: 0;
-  background: #fff;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
@@ -625,6 +624,8 @@ section {
 
  .icon-box-pink  {
   background-image: url(../img/online.jpg)!important;
+  background-size: cover!important;
+
 }
 .icon-box-pink h4 {
   position: relative;
@@ -645,14 +646,17 @@ section {
 }
 .icon-box-cyan{
   background-image: url(../img/direct-session.jpg)!important;
+  background-size: cover!important;
 
 }
 .icon-box-green{
   background-image: url(../img/instructor.jpg)!important;
+  background-size: cover!important;
 
 }
 .icon-box-blue{
   background-image: url(../img/training.jpg)!important;
+  background-size: cover!important;
 
 }
 .icon-box-cyan   h4{
