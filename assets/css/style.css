@@ -1743,3 +1743,11 @@ color:#000;
     cursor: pointer;
     z-index: 20;
   }
+
+  a{
+    color: #364146;
+  }
+
+  a:hover{
+    color: #db0000;
+  }
