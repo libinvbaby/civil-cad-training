@@ -74,7 +74,7 @@ h6 {
     transition-delay: 0 !important;
   }
   .br-left{
-    border-right: none;
+    border-right: #f7f8f9;
   }
 }
 
@@ -188,7 +188,7 @@ p{
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #009cea;
+  color: #db0000;
 }
 
 .navbar .dropdown ul {
@@ -1746,6 +1746,13 @@ color:#000;
   .fixed-icon{
     position: fixed;
     bottom: 20px;
+    left: 30px;
+    cursor: pointer;
+    z-index: 20;
+  }
+  .fixed-icon-phone{
+    position: fixed;
+    bottom: 70px;
     left: 30px;
     cursor: pointer;
     z-index: 20;
