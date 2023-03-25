@@ -73,9 +73,7 @@ h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
-  .br-left{
-    border-right: #f7f8f9;
-  }
+  
 }
 
 /*--------------------------------------------------------------
@@ -1706,6 +1704,9 @@ overflow: hidden;
 .card-img-top{
   border-radius: 10px 45px;
 
+}
+.br-left{
+  border-right: #f7f8f9;
 }
 .card-body h5{
   font-weight: bold;
