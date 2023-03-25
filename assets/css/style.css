@@ -1706,7 +1706,7 @@ overflow: hidden;
 
 }
 .br-left{
-  border-right: #f7f8f9;
+  border-right: 1px solid #f7f8f9 !important;
 }
 .card-body h5{
   font-weight: bold;
