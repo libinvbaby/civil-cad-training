@@ -61,6 +61,10 @@
 
 
   <!-- ======= Hero Section ======= -->
+  
+    
+  
+
   <section id="hero">
 
     <div class="container">
@@ -89,7 +93,7 @@
                 <label for="name">Your Email</label>
                 <input type="email" class="form-control" name="email" id="email" required>
               </div>
-              <div class="form-group col-md-6 mt-3 mt-md-0">
+              <div class="form-group col-md-12 mt-3 mt-md-0">
                 <label for="phone">Your Phone</label>
                 <input type="tel" class="form-control" name="phone" id="phone" required>
               </div>
@@ -115,6 +119,55 @@
 
   </section><!-- End Hero -->
 
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="hidePopup()">&times;</span>
+      <div class="contact">
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            
+          <div class="row">
+            <h4>Enquire Now</h4><br>
+            <br>
+            <div class="form-group col-md-6">
+              <label for="name">Your Name</label>
+              <input type="text" name="name" class="form-control" id="name" required>
+            </div>
+            <div class="form-group col-md-6 mt-3 mt-md-0">
+              <label for="name">Your Email</label>
+              <input type="email" class="form-control" name="email" id="email" required>
+            </div>
+            <div class="form-group col-md-12 mt-3 mt-md-0">
+              <label for="phone">Your Phone</label>
+              <input type="tel" class="form-control" name="phone" id="phone" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <label for="name">Subject</label>
+            <input type="text" class="form-control" name="subject" id="subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <label for="name">Message</label>
+            <textarea class="form-control" name="message" rows="3" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    function showPopup() {
+      document.getElementById("popup").style.display = "block";
+    }
+    
+    function hidePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+    </script>
   <main id="main">
 
     <!-- ======= About Section ======= -->
@@ -132,7 +185,8 @@
               <p class="">
                 Civil CAD Training in Thrissur is a valuable opportunity for individuals interested in entering the field of civil engineering. By learning the latest CAD software, individuals can develop the necessary skills to excel in the industry. CAD software helps civil engineers and designers do their tasks more quickly and effectively. They can use CAD to build incredibly accurate 2D and 3D models of their projects, which enables them to spot possible problems and make wise decisions
               </p>
-             
+              <a onclick="showPopup()" class="btn-get-quote ">Get a Quote</a>
+
             </div>
           </div>
         </div>
@@ -165,7 +219,7 @@
 
         <div class="row">
           
-          <div class="col-lg-12 d-flex flex-column justify-contents-center" data-aos="fade-left">
+          <div class="col-lg-6 d-flex flex-column justify-contents-center br-left" data-aos="fade-left">
             <div class="content pt-4 pt-lg-0">
               <h3>Why CADD International is the Right Choice for Your Civil CAD Training
 
@@ -189,72 +243,7 @@
               </p>
             </div>
           </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Features Section ======= -->
-    <!-- <section id="features" class="features">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-6 mt-2 mb-tg-0 order-2 order-lg-1">
-            <div class="content pt-4 pt-lg-0">
-              <h3>Expert Civil CAD Training at CADD International
-
-
-              </h3>
-              <p class="">
-                Through the practical use of computer-aided design software, the field of civil engineering suppresses industry progress. Engineers can execute things in the best possible method with the best training course. Engineers use CAD applications to enhance their reputation in the industry. You can realise your ideas in the stages of drafting, designing, visualising, and analysing with the help of the civil CAD platform.
-                  </p>
-              
-              
-            </div>
-          </div>
-         
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="tab-1">
-                <figure>
-                  <img src="assets/img/civil-cad-exp.jpg" alt="" class="img-fluid rounded-2">
-                </figure>
-              </div>
-             
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="content pt-4 pt-lg-0">
-              <h3 class="">Civil CAD Training Programs at CADD Intl
-
-
-              </h3>
-              <p class="">
-                We train engineers to use CAD as a tool to show their ideas and the actual conditions of the site in an efficient manner. It is considered superior to manual approaches due to the accuracy of the calculations and the precision of the sketches. The folks are forced to run on this track by this point. Modern engineering activities are all said to be smart. So become live with advanced Civil CAD Training.
-</p>
-          
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    </section> -->
-    <!-- End Features Section -->
-   
-
-    <section id="" class="about">
-      <div class="container">
-
-        <div class="row">
-          
-          <div class="col-lg-12 d-flex flex-column justify-contents-center" data-aos="fade-left">
+          <div class="col-lg-6 d-flex flex-column justify-contents-center" data-aos="fade-left">
             <div class="content pt-4 pt-lg-0">
               <h3>AutoCAD Course for Advanced Civil Design
 
@@ -294,6 +283,20 @@
               
             </div>
           </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    
+   
+
+    <section id="" class="about">
+      <div class="container">
+
+        <div class="row">
+          
+        
         </div>
 
       </div>
@@ -342,6 +345,8 @@
 
 
               </p>
+              <a  onclick="showPopup()" class="btn-get-quote ">Get a Quote</a>
+
             </div>
           </div>
         </div>
